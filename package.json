@@ -1,0 +1,16 @@
+{
+  "name": "catsgraphql",
+  "version": "1.0.0",
+  "main": "import.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "graphqurl": "^0.3.3"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
