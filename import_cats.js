@@ -81,13 +81,11 @@ const createCats =
   `mutation ($id: Int, $status_code: Int) {
     insert_cats (objects: [
         {
-          id: $id,
           status_code: $status_code
         }
       ]) {
       affected_rows
       returning {
-        id
         status_code
       }
     }
@@ -95,7 +93,6 @@ const createCats =
 
 statuses.forEach(async value=>{
     const catsDatails = {
-        id: value.code,
         status_code: value.code,
     }
 

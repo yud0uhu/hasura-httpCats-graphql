@@ -104,11 +104,10 @@ statuses.forEach(async value=>{
 
         const statusDatails = {
             status_code: value.code,
-            status_image: result.data,
+            status_image: `https://http.cat/${value.code}.jpg`,
             status_message: value.message
         }
 
-        console.log(value.message)
         client.query(createStatus, statusDatails).catch(error =>{
             console.log(error)
         })
