@@ -7,4 +7,5 @@ $ npm install
 ```
 ```shell
 $ node import_cats.js
+$ node import_status.js
 ```
