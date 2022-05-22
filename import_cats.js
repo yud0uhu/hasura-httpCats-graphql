@@ -29,5 +29,4 @@ statuses().forEach(async value=>{
     await client.query(createCats, catsDatails).catch(error =>{
         console.log(error)
     })
-    StatusDescription
 })
