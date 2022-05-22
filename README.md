@@ -1,5 +1,5 @@
 # Intoroduction
-[https://http.cat](https://http.cat/) から猫画像を取得し，GraphQL APIのクエリを発行するです．  
+[https://http.cat](https://http.cat/) から猫画像を取得し，GraphQL APIのクエリを発行します．  
   
 ## Development
 ```shell
