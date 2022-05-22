@@ -9,7 +9,6 @@ const client = new Client({
         'X-Hasura-Access-Key':'mysecretkey',
     }
 })
-
 statuses().forEach(async value=>{
     await axios.get(`https://http.cat/${value.code}.jpg`, {
     }).then(result => {
@@ -32,7 +31,7 @@ statuses().forEach(async value=>{
                         status_message
                     }
                 }
-              }`
+            }`
 
         const statusDatails = {
             status_code: value.code,
@@ -40,8 +39,8 @@ statuses().forEach(async value=>{
             status_message: value.message
         }
 
-        // client.query(createStatus, statusDatails).catch(error =>{
-        //     console.log(error)
-        // })
-    })
+        client.query(createStatus, statusDatails).catch(error =>{
+            console.log(error)
+        })
+    }).catch((code) => { console.error("error:" + code); })
 })
